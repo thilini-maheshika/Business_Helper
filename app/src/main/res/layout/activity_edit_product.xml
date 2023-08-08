@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProduct">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Edit Product"
+        android:textColor="#510202"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/p_edit_ProductTitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Product Title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/p_edit_productDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Product Description"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/p_edit_ProductTitle"
+        app:layout_constraintStart_toStartOf="@+id/p_edit_ProductTitle"
+        app:layout_constraintTop_toBottomOf="@+id/p_edit_ProductTitle" />
+
+    <EditText
+        android:id="@+id/p_edit_productPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Product Price"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/p_edit_productDescription"
+        app:layout_constraintStart_toStartOf="@+id/p_edit_productDescription"
+        app:layout_constraintTop_toBottomOf="@+id/p_edit_productDescription" />
+
+    <EditText
+        android:id="@+id/p_edit_qty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Product Qty"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/p_edit_productPrice"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="@+id/p_edit_productPrice"
+        app:layout_constraintTop_toBottomOf="@+id/p_edit_productPrice" />
+
+    <Button
+        android:id="@+id/btnEditSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#2E0202"
+        android:text="Save Product"
+        android:textColor="#F1E5E5"
+        app:layout_constraintEnd_toEndOf="@+id/p_edit_qty"
+        app:layout_constraintStart_toStartOf="@+id/p_edit_qty"
+        app:layout_constraintTop_toBottomOf="@+id/p_edit_qty" />
+
+    <CheckBox
+        android:id="@+id/checkBoxProductActiveEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Product Active"
+        app:layout_constraintEnd_toEndOf="@+id/p_edit_qty"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="@+id/p_edit_qty"
+        app:layout_constraintTop_toBottomOf="@+id/p_edit_qty" />
+
+    <Button
+        android:id="@+id/btnBacktoProductsFromEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        android:backgroundTint="#2E0202"
+        android:textColor="#F1E5E5"
+        app:layout_constraintEnd_toEndOf="@+id/btnEditSave"
+        app:layout_constraintStart_toStartOf="@+id/btnEditSave"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditSave" />
+
+</android.support.constraint.ConstraintLayout>

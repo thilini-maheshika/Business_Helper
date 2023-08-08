@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetails">
+
+    <TextView
+        android:id="@+id/textPDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="@+id/textPStatus"
+        app:layout_constraintTop_toBottomOf="@+id/textPStatus" />
+
+    <TextView
+        android:id="@+id/textPid"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Product details"
+        android:textColor="#510202"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="@+id/textPid"
+        app:layout_constraintTop_toBottomOf="@+id/textPid" />
+
+    <TextView
+        android:id="@+id/textPDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="@+id/textPName"
+        app:layout_constraintTop_toBottomOf="@+id/textPName" />
+
+    <TextView
+        android:id="@+id/textPPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="@+id/textPDesc"
+        app:layout_constraintTop_toBottomOf="@+id/textPDesc" />
+
+    <TextView
+        android:id="@+id/textPQTY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="@+id/textPPrice"
+        app:layout_constraintTop_toBottomOf="@+id/textPPrice" />
+
+    <TextView
+        android:id="@+id/textPStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="@+id/textPQTY"
+        app:layout_constraintTop_toBottomOf="@+id/textPQTY" />
+
+    <Button
+        android:id="@+id/btnPDetsilsback"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#2E0202"
+        android:text="Back"
+        android:textColor="#F1E5E5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SalesCart">
+
+    <TextView
+        android:id="@+id/textTotalSales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="TextView"
+        android:textColor="#BA0B0B"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnClearCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddtoCart"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2E0202"
+        android:text="Add to Cart"
+        android:textColor="#F1E5E5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnBacktoSales"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2E0202"
+        android:text="Back to Main"
+        android:textColor="#F1E5E5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAddtoCart" />
+
+    <Button
+        android:id="@+id/btnClearCart"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#2E0202"
+        android:text="Clear Cart"
+        android:textColor="#F1E5E5"
+        app:layout_constraintBottom_toTopOf="@+id/btnBacktoSales"
+        app:layout_constraintStart_toStartOf="@+id/btnBacktoSales" />
+
+    <Button
+        android:id="@+id/btnChekout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#2E0202"
+        android:text="Check Out"
+        android:textColor="#F1E5E5"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddtoCart"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddtoCart" />
+
+    <ListView
+        android:id="@+id/cartListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toTopOf="@+id/textTotalSales"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+</android.support.constraint.ConstraintLayout>

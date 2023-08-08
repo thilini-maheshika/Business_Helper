@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddProduct">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Add Product"
+        android:textColor="#510202"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/p_add_ProductTitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Product Title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/p_add_productDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Product Description"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/p_add_ProductTitle"
+        app:layout_constraintStart_toStartOf="@+id/p_add_ProductTitle"
+        app:layout_constraintTop_toBottomOf="@+id/p_add_ProductTitle" />
+
+    <EditText
+        android:id="@+id/p_add_productPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Product Price"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/p_add_productDescription"
+        app:layout_constraintStart_toStartOf="@+id/p_add_productDescription"
+        app:layout_constraintTop_toBottomOf="@+id/p_add_productDescription" />
+
+    <EditText
+        android:id="@+id/p_add_qty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Product Qty"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/p_add_productPrice"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="@+id/p_add_productPrice"
+        app:layout_constraintTop_toBottomOf="@+id/p_add_productPrice" />
+
+    <Button
+        android:id="@+id/btnAddNewSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#2E0202"
+        android:text="Save Product"
+        android:textColor="#F1E5E5"
+        app:layout_constraintEnd_toEndOf="@+id/p_add_qty"
+        app:layout_constraintStart_toStartOf="@+id/p_add_qty"
+        app:layout_constraintTop_toBottomOf="@+id/p_add_qty" />
+
+    <CheckBox
+        android:id="@+id/checkBoxProductActiveAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Product Active"
+        app:layout_constraintEnd_toEndOf="@+id/p_add_qty"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="@+id/p_add_qty"
+        app:layout_constraintTop_toBottomOf="@+id/p_add_qty" />
+
+    <Button
+        android:id="@+id/btnBacktoProducts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        android:backgroundTint="#2E0202"
+        android:textColor="#F1E5E5"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddNewSave"
+        app:layout_constraintStart_toStartOf="@+id/btnAddNewSave"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddNewSave" />
+
+</android.support.constraint.ConstraintLayout>

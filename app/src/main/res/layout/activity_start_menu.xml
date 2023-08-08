@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rotation="-360"
+    tools:context=".Activity.Start_menu">
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="127dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="88dp"
+        android:adjustViewBounds="true"
+        android:autofillHints="1"
+        android:background="#00000000"
+        android:contentDescription="product Icon"
+        android:scaleType="fitCenter"
+        android:src="@drawable/product"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="127dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="44dp"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:contentDescription="Income Icon"
+        android:scaleType="fitCenter"
+        android:src="@drawable/increasing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="127dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="44dp"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:contentDescription="Profit Icon"
+        android:scaleType="fitCenter"
+        android:src="@drawable/profits"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incomebtn">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="127dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="72dp"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:contentDescription="Expense Icon"
+        android:scaleType="fitCenter"
+        android:src="@drawable/money_waste"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productbtn">
+
+    </ImageButton>
+
+    <Button
+        android:id="@+id/productbtn"
+        android:layout_width="157dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#294D71"
+        android:text="Products"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton1" />
+
+    <Button
+        android:id="@+id/profitbtn"
+        android:layout_width="157dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#294D71"
+        android:text="Profit"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+    <Button
+        android:id="@+id/expensebtn"
+        android:layout_width="157dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#294D71"
+        android:text="Expense"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+    <Button
+        android:id="@+id/incomebtn"
+        android:layout_width="157dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#294D71"
+        android:text="Income"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SalesMain">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Sales"
+        android:textColor="#270101"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSalesList"
+        android:layout_width="326dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#2E0202"
+        android:text="Sales List"
+        android:textColor="#F1E5E5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btnAddSale"
+        android:layout_width="330dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2E0202"
+        android:text="Add New Sales"
+        android:textColor="#F1E5E5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnSalesList"
+        app:layout_constraintTop_toBottomOf="@+id/btnSalesList" />
+
+    <Button
+        android:id="@+id/btnBacktoHome"
+        android:layout_width="320dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="#2E0202"
+        android:text="Back to Start Menu"
+        android:textColor="#F1E5E5"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddSale"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnAddSale"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddSale" />
+</android.support.constraint.ConstraintLayout>

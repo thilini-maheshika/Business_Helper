@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditExpenses">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Edit Expenses"
+        android:textColor="#510202"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/e_edit_BillNumber"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Bill Number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/e_edit_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/e_edit_BillNumber"
+        app:layout_constraintStart_toStartOf="@+id/e_edit_BillNumber"
+        app:layout_constraintTop_toBottomOf="@+id/e_edit_BillNumber" />
+
+    <Button
+        android:id="@+id/btnEditSaveExpenses"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2E0202"
+        android:text="Edit Expenses"
+        android:textColor="#F1E5E5"
+        app:layout_constraintEnd_toEndOf="@+id/e_edit_amount"
+        app:layout_constraintStart_toStartOf="@+id/e_edit_amount"
+        app:layout_constraintTop_toBottomOf="@+id/e_edit_amount" />
+
+    <Button
+        android:id="@+id/btnBacktoExpensesfromEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        android:backgroundTint="#2E0202"
+        android:textColor="#F1E5E5"
+        app:layout_constraintEnd_toEndOf="@+id/btnEditSaveExpenses"
+        app:layout_constraintStart_toStartOf="@+id/btnEditSaveExpenses"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditSaveExpenses" />
+
+</android.support.constraint.ConstraintLayout>
